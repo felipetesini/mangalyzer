@@ -13,17 +13,21 @@ img {
     border-radius: 15px;
 }
 
+/* Classe de elemento <span> para deixar o texto em negrito */
 .negrito {
     font-weight: 750;
     color: #F45688;
 }
 
+/* Tirar a formatação padrão dos elementos <a> */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Formatação Header */
+
+/* ------------------------ Formatação Header */
+
 
 header {
     display: flex;
@@ -40,12 +44,12 @@ header {
 }
 
 input {
+    border-radius: 24px;
+    padding: 14px;
+
     color: black;
     border-color: transparent;
     background-color: white;
-
-    border-radius: 24px;
-    padding: 14px;
 
     max-width: 400px;
     max-height: 44px;
@@ -61,12 +65,14 @@ input {
     min-height: 36px;
 }
 
-#mangalyzer__container-logo, a {
+#mangalyzer__container--logo {
     background-color: transparent;
     border-radius: 0px;
 }
 
-/* Formatação Nav */
+
+/* ------------------------ Formatação Nav */
+
 
 nav {
     display: flex;
@@ -83,52 +89,49 @@ nav {
 }
 
 .nav__button {
-    font-family: Fredoka;
-    font-weight: 450;
-    font-size: small;
     padding: 6px 26px 6px 26px;
     border-radius: 20px;
 
     background-color: rgb(253, 253, 253);
     color: rgb(78, 76, 76);
+
+    font-family: Fredoka;
+    font-weight: 450;
+    font-size: 0.8rem;
 }
 
-/* Formatação Main & Sections */
+
+/* ------------------------ Formatação Main & Sections */
+
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     margin: 30px 20px 20px 20px;
+    gap: 40px;
 }
 
-.section__titleCards {
-    color: #F45688;
-
+.section__titlecards {
     padding-bottom: 14px;
+
+    color: #F45688;
 
     font-family: Fredoka;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.section__highlightsCards {
-    overflow: hidden;
-
-    max-width: 768px;
-    max-height: auto;
-    width: 100%;
-    height: auto;
-} .highlight--img { max-width: 768px; max-height: auto; width: 100%; height: auto;}
-
-.section__popularCards, .section__RecentlyUpdCards {
+.section__highlightscards,
+.section__popularcards,
+.section__recentlyupdcards,
+.highlight--img {
     max-width: 768px;
     max-height: auto;
     width: 100%;
     height: auto;
 }
 
-.section__containerCards {
+.section__containercards {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -140,17 +143,19 @@ main {
     height: auto;
 } .popular--img { max-width: 168px; max-height: auto; width: 100%; height: 100%;}
 
-/* Formatação Footer */
+
+/* ------------------------ Formatação Footer */
+
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
+    padding: 34px;
     gap: 48px;
 
     background-color: #222222;
-    padding: 34px;
 
     max-width: 100%;
     max-height: 274px;
@@ -172,31 +177,30 @@ footer {
     display: flex;
     justify-content: center;
     align-items: top;
-
-    color: #F45688;
     text-align: left;
 
-    font-size: 1.9rem;
+    color: #F45688;
+
     font-family: Fredoka;
     font-weight: 600;
+    font-size: 1.9rem;
 
     max-width: 150px;
-    max-height: 100%;
+    max-height: auto;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .footer__container--sec {
     color: aliceblue;
 
     font-family: Fredoka;
-
 } .footer__list {display: flex; flex-direction: column; gap: 10px; list-style: none;}
 
 .footer__copyright {
     color: gray;
 
-    font-family: fredoka;
+    font-family: Fredoka;
     font-style: italic;
     font-size: 0.7rem;
 }
